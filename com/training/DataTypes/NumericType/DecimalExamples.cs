@@ -14,7 +14,7 @@ namespace BasicsOfDotNet.com.training.DataTypes.NumericType
         public void DecimalMethod()
         {
             int testValue = 135;
-            Console.WriteLine(decimal.Parse(testValue.ToString()));
+            Console.WriteLine((decimal)testValue);
         }
     }
 }

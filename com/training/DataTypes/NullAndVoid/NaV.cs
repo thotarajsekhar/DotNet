@@ -35,5 +35,10 @@ namespace BasicsOfDotNet.com.training.DataTypes.NullAndVoid
             Console.WriteLine(nullString.Length);
             return null;
         }
+
+        // IDENTIFIER RETURN_TYPE METHOD_NAME(PARAMETERES1, PARAMETERES2, ...)
+        // {
+        //      METHOD BODY
+        // }
     }
 }

@@ -10,13 +10,14 @@ namespace BasicsOfDotNet.com.training.DataTypes
 
         public void VarTypeExample()
         {
+            // Declaring a string literal without initializing is alowed
             string valueType;
             // This is not allowed.
             //var someType;
             Console.Write("Enter text: ");
-            var text = Console.ReadLine();
+            valueType = Console.ReadLine();
             // Return a new string in uppercase
-            var uppercase = text.ToUpper();
+            var uppercase = valueType.ToUpper();
             Console.WriteLine(uppercase);
         }
 

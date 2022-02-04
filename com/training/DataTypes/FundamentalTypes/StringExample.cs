@@ -65,7 +65,7 @@ namespace BasicsOfDotNet.com.training.DataTypes.FundamentalTypes
         public void ToUpper()
         {
             string text, uppercase;
-            System.Console.Write("Enter text to convert it to Upper Case: ");
+            Console.Write("Enter text to convert it to Upper Case: ");
             text = System.Console.ReadLine();
             // Return a new string in uppercase
             text.ToUpper();
