@@ -13,8 +13,8 @@ namespace BasicsOfDotNet.com.training.DataTypes.NumericType
 
         public void DecimalMethod()
         {
-            int testValue = 135;
-            Console.WriteLine((decimal)testValue);
+            decimal testValue = 135.35M;
+            Console.WriteLine(testValue);
         }
     }
 }

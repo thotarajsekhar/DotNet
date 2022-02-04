@@ -25,6 +25,15 @@ namespace BasicsOfDotNet.com.training.DataTypes.NumericType
             // type "cw" and press TAB key twice. Shortcut for Console.WriteLine
             // Print all the types of the variables???
             Console.WriteLine(simpleInt);
+            Console.WriteLine(simpleIntiger.GetType());
+            Console.WriteLine(simpleSbyte.GetHashCode());
+            Console.WriteLine(simpleShort);
+            Console.WriteLine(simpleUInt);
+            Console.WriteLine(simpleLong);
+            Console.WriteLine(simpleULong);
+            Console.WriteLine(simpleIntiger);
+            Console.WriteLine(simpleSbyte);
+            
         }
     }
 }

@@ -53,6 +53,11 @@ namespace BasicsOfDotNet.com.training.DataTypes.FundamentalTypes
             System.Console.WriteLine("The palindrome, \"{0}\" is {1} characters.", palindrome, palindrome.Length);
         }
 
+        internal void MyMethod()
+        {
+            throw new NotImplementedException();
+        }
+
         public void FormatMethod()
         {
             Console.WriteLine(DateTime.Now.ToString("dd-MM-yyyy"));

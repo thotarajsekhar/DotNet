@@ -27,6 +27,7 @@ namespace BasicsOfDotNet
                     break;
                 case 2:
                     FloatingPointExamples fpe = new FloatingPointExamples();
+                    fpe.FloatMethod();
                     break;
                 case 3:
                     IntExamples ie = new IntExamples();
@@ -47,6 +48,7 @@ namespace BasicsOfDotNet
                 case 7:
                     StringExample se = new StringExample();
                     se.FormatMethod();
+                    se.MyMethod();
                     se.LengthMethod();
                     se.StringMethod();
                     se.TrimMethod();
