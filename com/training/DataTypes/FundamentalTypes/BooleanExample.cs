@@ -9,14 +9,15 @@ namespace BasicsOfDotNet.com.training.DataTypes.FundamentalTypes
         /*
          * Boolean is a very important Data Type for a QA Engineer.
          * It is used to exit from a condition. 
-         * If the datatype is not used correctly then what will happen?
+         * If the datatype is not used correctly then what will happen? - 
+         * --- never ending process, need to be very careful on what are we using on the loop
          */
 
         public void BooleanMethod()
         {
             if(true)
             {
-                Console.WriteLine("This if condition will always print.");
+                Console.WriteLine("This condition will always print.");
             }
 
             if(!true)
@@ -28,9 +29,10 @@ namespace BasicsOfDotNet.com.training.DataTypes.FundamentalTypes
             Console.Write(@"This for loop will be executed forever.
                                   Avoid this kind of checks.");
 
-            for (int i = 0; i >= 0; i--)
+            for (int i = 0; i <= 5; i++)
             {
-                Console.Write("i = {0}, \t", i);
+                Console.Write("i = {0}, \v", i);
+                //changed the loop to i++ with 1 <=0 and it became a never ending process
             }
         }
     }

@@ -12,8 +12,12 @@ namespace BasicsOfDotNet.com.training.DataTypes.FundamentalTypes
          */
         public void CharMethod()
         {
-            char charVariable = 'a';
-            Console.WriteLine(((byte)charVariable));
+            char charVariable = 'b';
+            string charVariables = "abc";
+            Console.WriteLine(((sbyte)charVariable));
+            Console.WriteLine(((short)charVariable));
+            Console.WriteLine(charVariables.Length);
+            Console.WriteLine(charVariables.TrimStart());
         }
     }
 }
