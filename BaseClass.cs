@@ -47,13 +47,18 @@ namespace BasicsOfDotNet
                     break;
                 case 7:
                     StringExample se = new StringExample();
+                    se.LengthMethod();
+                    se.ToUpper();
+                    se.StringConcat();
+                    se.TrimMethod();
+                    se.StringMethod();
                     se.FormatMethod();
                     se.MyMethod();
-                    se.LengthMethod();
-                    se.StringMethod();
-                    se.TrimMethod();
+                    
+                    
+                    
                     break;
-                case 8:
+                    case 8:
                     NaV na = new NaV();
                     na.SecondMethod();
                     break;

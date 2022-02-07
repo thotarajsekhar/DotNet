@@ -12,7 +12,7 @@ namespace BasicsOfDotNet.com.training.DataTypes.FundamentalTypes
          * This example consists many methods with which we will practise. 
          */
 
-        readonly string stringVariable = "    This is a sample string. We will play with this variable.    ";
+        readonly string stringVariable = "    This is a sample string. We will play with this variable:    ";
         string palindrome, palindrome1;
 
         public void StringMethod()
@@ -24,7 +24,7 @@ namespace BasicsOfDotNet.com.training.DataTypes.FundamentalTypes
         public void StringConcat()
         {
             // One way for string concat
-            Console.Write("\n Eneter a string to concat: ");
+            Console.Write("\n Enter a string to concat: ");
             var userInputString = Console.ReadLine();
             var newValue = stringVariable + userInputString;
             Console.WriteLine("The new value is:\t{0}", newValue);
@@ -44,7 +44,8 @@ namespace BasicsOfDotNet.com.training.DataTypes.FundamentalTypes
         {
             Console.WriteLine("Trimming Start: {0}", stringVariable.TrimStart());
             Console.WriteLine("Trimming End: {0}", stringVariable.TrimEnd());
-            Console.WriteLine("Trimming: {0}", stringVariable.Trim(1));
+            Console.WriteLine("Trimming: {0}", stringVariable.Trim());
+            //Console.WriteLine("Trimming: {0}", stringVariable.Trim(1));
             //I tried to trim the string first letter but it didnt work
         }
 
@@ -52,9 +53,13 @@ namespace BasicsOfDotNet.com.training.DataTypes.FundamentalTypes
         {
 
             //string palindrome = "test";
-            palindrome = System.Console.Write("Enter a palindrome: ");
-            palindrome1 = System.Console.ReadLine(palindrome);
-            System.Console.WriteLine("The palindrome, \"{0}\" is {1} characters.", palindrome1, palindrome1.Length);
+
+            //palindrome = System.Console.Write("Enter a palindrome: ");
+            //palindrome1 = System.Console.ReadLine(palindrome);
+
+            System.Console.Write("Enter a palindrome: ");
+            System.Console.ReadLine();
+            System.Console.WriteLine("The palindrome, \"{0}\" is {1} characters.", palindrome, palindrome.Length);
             //this doesn't return anything. Need more help understanding this. I didnt find anything wrong in the code.
         }
 
@@ -84,9 +89,11 @@ namespace BasicsOfDotNet.com.training.DataTypes.FundamentalTypes
             // Return a new string in uppercase
             text.ToUpper();
             Console.WriteLine("Printing the original value ToUpper(): {0}", text);
+            //returns lower case as the new variable is not assigned
             uppercase = text.ToUpper();
             Console.WriteLine("Printing the converted value ToUpper(): {0}", uppercase);
-            //this doesn't return any values
+            //returns upper case as new variable is assigned
+            
         }
     }
 }
