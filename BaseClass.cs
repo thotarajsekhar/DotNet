@@ -47,6 +47,7 @@ namespace BasicsOfDotNet
                     break;
                 case 7:
                     StringExample se = new StringExample();
+                        se.StringMethod1();
                         se.ReplaceLetterMethod();
                         se.SplitMethod();
                         /*se.ReverseString();

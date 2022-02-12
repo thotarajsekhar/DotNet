@@ -167,7 +167,28 @@ namespace BasicsOfDotNet.com.training.DataTypes.FundamentalTypes
 
         }
 
-        
+        public void StringMethod1()
+        {
+            string sLearn = "I am learning";
+            Console.WriteLine(sLearn.Contains('a'));
+            Console.WriteLine(sLearn.Contains("am"));
+            string sLearn1 = (string)sLearn.Clone();
+            Console.WriteLine(sLearn1);
+            Console.WriteLine(sLearn.CompareTo(sLearn1));
+            Console.WriteLine(sLearn.EndsWith('g'));
+            Console.WriteLine(sLearn.EndsWith("z"));
+            Console.WriteLine(sLearn.Equals("hello world"));
+            Console.WriteLine(sLearn.Insert(5,"the "));
+            Console.WriteLine(sLearn.PadRight(8));
+            Console.WriteLine(sLearn.PadRight(10, 't'));
+            Console.WriteLine(sLearn.Remove(5));
+            Console.WriteLine(sLearn.Remove(2, 2));
+            Console.WriteLine(sLearn.Replace("learning", "Rahul"));
+            //Console.WriteLine(sLearn.Replace("Gopa", "Rahul", StringComparison("Gopa" != "Rahul"));
+            Console.WriteLine(sLearn.Substring(5));
+            Console.WriteLine(sLearn.Substring(5,8));
+        }
+
 
     }
 }
