@@ -13,7 +13,7 @@ namespace BasicsOfDotNet.com.training.DataTypes.FundamentalTypes
          */
 
         readonly string stringVariable = "    This is a sample string. We will play with this variable:    ";
-        string palindrome, palindrome1;
+        string palindrome;
 
         public void StringMethod()
         {
@@ -36,7 +36,7 @@ namespace BasicsOfDotNet.com.training.DataTypes.FundamentalTypes
             stringBuilder.Append(Console.ReadLine());
 
             // String Format is used.
-            Console.WriteLine("The appedned string value is: {0}", stringBuilder);
+            Console.WriteLine("The appended string value is: {0}", stringBuilder);
         }
 
         // String instance method
@@ -52,15 +52,11 @@ namespace BasicsOfDotNet.com.training.DataTypes.FundamentalTypes
         public void LengthMethod()
         {
 
-            //string palindrome = "test";
-
-            //palindrome = System.Console.Write("Enter a palindrome: ");
-            //palindrome1 = System.Console.ReadLine(palindrome);
-
             System.Console.Write("Enter a palindrome: ");
-            System.Console.ReadLine();
+            palindrome = System.Console.ReadLine();
+
             System.Console.WriteLine("The palindrome, \"{0}\" is {1} characters.", palindrome, palindrome.Length);
-            //this doesn't return anything. Need more help understanding this. I didnt find anything wrong in the code.
+            
         }
 
         internal void MyMethod()
@@ -95,5 +91,83 @@ namespace BasicsOfDotNet.com.training.DataTypes.FundamentalTypes
             //returns upper case as new variable is assigned
             
         }
+
+        public void ShowFullName()
+        {
+            string Name, FN, LN;
+            Console.Write("Enter First Name: ");
+            FN = Console.ReadLine();
+            Console.Write("Enter Last Name: ");
+            LN = Console.ReadLine();
+            Console.WriteLine(FN +" "+ LN);
+
+
+        }
+
+
+        public void DuplicateString()
+        {
+            string textString = "Google";
+            char[] charArray = textString.ToCharArray();
+            for (int i = 0; i<(textString.Length); i++)
+            {
+                if(charArray[i] == charArray[i+1])
+                {
+                    Console.WriteLine("duplicate character is: {0}", charArray[i] );
+                    break;
+                }
+            }
+        }
+
+
+        public void ReverseString()
+        {
+            string nameString = "Google";
+
+            char[] nameChar = nameString.ToCharArray();
+            StringBuilder stringBuilder = new StringBuilder();
+            for (int i = (nameString.Length-1); i >= 0; i--)
+            {
+
+                stringBuilder.Append(nameChar[i]);
+
+            }
+            Console.WriteLine("Reverse string is: {0}", stringBuilder.ToString());
+       
+        }
+
+        public void SplitMethod()
+        {
+            string sNameString = "I am Gopa";
+            string[] sList = sNameString.Split(" ");
+            for(int i = (sList.Length-1); i>=0; i--)
+                Console.Write(sList[i]+" ");
+
+        }
+
+
+        public void ReplaceLetterMethod()
+        {
+            string sPresident = "I am Donald Trump";
+            string[] sArray = sPresident.Split(" ");
+            char[] sChar = sPresident.ToCharArray();
+
+            for(int i = 0; i< sChar.Length; i++)
+            {
+                if(sChar[i] == 'a')
+                {
+                    sChar[i] = 'z';
+                }
+            }
+            Console.WriteLine("Print the name: {0}:", new string(sChar));
+            //string.replace is a method replaces sring or character
+            string sText = "This is just a simple text to replace the s with a";
+            Console.WriteLine(sText.Replace('s', 'a'));
+
+
+        }
+
+        
+
     }
 }
