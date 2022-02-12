@@ -15,6 +15,18 @@ namespace BasicsOfDotNet
         static void Main(string[] args)
         {
             StartHere:
+            Console.WriteLine("Enter 1 for Decimal Examples.");
+            Console.WriteLine("Enter 2 for Floating Point Example.");
+            Console.WriteLine("Enter 3 for Integer Examples.");
+            Console.WriteLine("Enter 4 for Literal Example.");
+            Console.WriteLine("Enter 5 for Boolean Example.");
+            Console.WriteLine("Enter 6 for Char Example");
+            Console.WriteLine("Enter 7 for String Example.");
+            Console.WriteLine("Enter 8 for Null and Void Example.");
+            Console.WriteLine("Enter 9 for Implicitly typed Example");
+            Console.WriteLine("Enter 10 for Value type and Reference Type Example.");
+            Console.WriteLine("ENter 11 for Implicit Conversion Example.");
+            Console.WriteLine("ENter 12 for Explicit Conversion Example.");
             Console.Write("Enter a valid number from 1 to 11: ");
             int userValue = int.Parse(Console.ReadLine());
             try
@@ -54,11 +66,8 @@ namespace BasicsOfDotNet
                     se.StringMethod();
                     se.FormatMethod();
                     se.MyMethod();
-                    
-                    
-                    
                     break;
-                    case 8:
+                case 8:
                     NaV na = new NaV();
                     na.SecondMethod();
                     break;
@@ -76,8 +85,13 @@ namespace BasicsOfDotNet
                     ImplicitConversion ic = new ImplicitConversion();
                     ic.NoCastingRequired();
                     break;
+                case 12:
+                    ExplicitConversions ec = new ExplicitConversions();
+                    ec.ExplicitConversion();
+                    ec.CheckedAndUncheckedBlocks();
+                    break;
                 default:
-                    goto StartHere;
+                goto StartHere;
             }
             } catch(Exception e)
             {
